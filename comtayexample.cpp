@@ -19,16 +19,14 @@
 using namespace comtay; 
 using namespace std;
 
-class CoTask1 : public CoTask
-{
+class CoTask1 : public CoTask {
 protected:
   void body() override;
 };
 
-class CoTask2 : public CoTask
-{
+class CoTask2 : public CoTask {
 protected:
-    void body() override;
+  void body() override;
 };
 
 CoTask1* pCoTask1 = nullptr;
@@ -53,21 +51,16 @@ int main()
   return 0;
 }
 
-void CoTask1::body()
-{
-    for (int i = 0; i < 3; i++)
-    {
-        cout << "Hello, ";
-        resume(pCoTask2);
-    }
+void CoTask1::body() {
+  for (int i = 0; i < 3; i++) {
+    cout << "Hello, ";
+    resume(pCoTask2);
+  }
 };
 
-void CoTask2::body()            
-{
-   do
-    {
-       cout << "World!" << endl;
-       suspend();         
-    }
-    while (true);
+void CoTask2::body() {
+  do {
+    cout << "World!" << endl;
+    suspend();         
+  } while (true);
 }
