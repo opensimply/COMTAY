@@ -50,8 +50,8 @@ void CoTask1::body() {
 };
 
 void CoTask2::body() {
-  do {
+  for (;;) {
     cout << "World!" << endl;
     suspend();         
-  } while (true);
+  };
 }
