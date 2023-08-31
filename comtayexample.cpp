@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include <string>
-#include "comtay.hpp"           // COMTAY functions.
+#include "comtay.hpp" 
 
 // WARNING: Stack check must be disabled in your projects when using COMTAY.
 
