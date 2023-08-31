@@ -40,7 +40,7 @@ int main()
   return 0;
 }
 
-// Description of Task #1.
+// Description of Task #1
 void CoTask1::body() {
   for (int i = 0; i < 3; i++) {
     cout << "Hello, ";
@@ -48,6 +48,7 @@ void CoTask1::body() {
   }
 };
 
+// Description of Task #2
 void CoTask2::body() {
   for (;;) {
     cout << "World!" << endl;
