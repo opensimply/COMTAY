@@ -10,11 +10,7 @@
 #include <string>
 #include "comtay.hpp"           // COMTAY functions.
 
-/*******************************************************************************
-
-  WARNING: Stack check must be disabled in your projects when using COMTAY.
-
-*******************************************************************************/
+// WARNING: Stack check must be disabled in your projects when using COMTAY.
 
 #ifdef _MSC_VER           
 #pragma runtime_checks( "s", off)      // Is already disabled for MS Visual C++
