@@ -11,7 +11,6 @@
 #include "comtay.hpp" 
 
 // WARNING: Stack check must be disabled in your projects when using COMTAY.
-
 #ifdef _MSC_VER           
 #pragma runtime_checks( "s", off)      // Is already disabled for MS Visual C++
 #endif
@@ -35,18 +34,13 @@ CoTask2* pCoTask2 = nullptr;
 int main()
 {
   initializeComtay();
-
   pCoTask1 = new CoTask1{};
   pCoTask2 = new CoTask2{};
-
   pCoTask1->resumeAsMain();             
-
   delete pCoTask1;
   delete pCoTask2;
-
   cout << "\nPress ENTER for program termination" << endl;
   cin.get();
-
   finalizeComtay();
   return 0;
 }
