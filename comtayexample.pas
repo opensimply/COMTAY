@@ -66,7 +66,3 @@ begin
   Write(EOL,'Press ENTER for program termination');
   ReadLn;
 end.
-
-
-
-
