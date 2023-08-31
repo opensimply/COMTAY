@@ -10,8 +10,6 @@
 #include <string>
 #include "comtay.hpp" 
 
-// WARNING: Stack check must be disabled in your projects when using COMTAY.
-
 using namespace comtay; 
 using namespace std;
 
