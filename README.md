@@ -1,5 +1,5 @@
 # COMTAY coroutine manager for Delphi and Free Pascal
-### as well as for C++ and more
+#### as well as for C++ and more
 
 ## Download COMTAY at [opensimply.org/comtay](https://opensimply.org/comtay/) 
 
