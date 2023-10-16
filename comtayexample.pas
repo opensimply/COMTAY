@@ -51,7 +51,7 @@ var
   Cotask2: TCotask2;
 
 begin
-  InitializeComtay;
+  InitializeComtay;  // Start using the COMTAY.
 
   Cotask1 := TCotask1.Create;
   Cotask2 := TCotask2.Create;
@@ -61,7 +61,7 @@ begin
   Cotask1.Free;
   Cotask2.Free;
 
-  FinalizeComtay;
+  FinalizeComtay;   // End using the COMTAY.
 
   Write(EOL,'Press ENTER for program termination');
   ReadLn;
