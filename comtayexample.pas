@@ -11,7 +11,7 @@ program COMTAYexample;
 {$S-} 
 
 uses
-  Comtay; // That's all you need to start using the COMTAY features.
+  Comtay;          // That's all you need to start using the COMTAY features.
 
 type
 
@@ -51,17 +51,17 @@ var
   Cotask2: TCotask2;
 
 begin
-  InitializeComtay;  // Start using the COMTAY.
+  InitializeComtay;             // Start using the COMTAY.
 
-  Cotask1 := TCotask1.Create;
-  Cotask2 := TCotask2.Create;
+  Cotask1 := TCotask1.Create;  
+  Cotask2 := TCotask2.Create;  
 
   Cotask1.ResumeAsMain;
 
   Cotask1.Free;
   Cotask2.Free;
 
-  FinalizeComtay;   // End using the COMTAY.
+  FinalizeComtay;               // End using the COMTAY.
 
   Write(EOL,'Press ENTER for program termination');
   ReadLn;
