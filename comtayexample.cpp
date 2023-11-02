@@ -26,9 +26,8 @@ protected:
 CoTask1* pCoTask1 = nullptr;
 CoTask2* pCoTask2 = nullptr;
 
-int main()
-{
-  initializeComtay();
+int main() {
+  initializeComtay();         // Start using the COMTAY.
   pCoTask1 = new CoTask1{};
   pCoTask2 = new CoTask2{};
   pCoTask1->resumeAsMain();             
@@ -36,7 +35,7 @@ int main()
   delete pCoTask2;
   cout << "\nPress ENTER for program termination" << endl;
   cin.get();
-  finalizeComtay();
+  finalizeComtay();           // End using the COMTAY.
   return 0;
 }
 
