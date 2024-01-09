@@ -6,4 +6,4 @@ It is applicable to both procedural and class-based programming. Exceptions and 
 ***
 See example [for Delphi and Free Pascal](https://github.com/opensimply/COMTAY/blob/main_3/comtayexample.pas)
 ***
-See example [C++](https://github.com/opensimply/COMTAY/blob/main_3/comtayexample.cpp)
+See example [for C++](https://github.com/opensimply/COMTAY/blob/main_3/comtayexample.cpp)
