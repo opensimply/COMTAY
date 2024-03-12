@@ -30,12 +30,11 @@ int main() {
   initializeComtay();         // Start using the COMTAY.
   pCoTask1 = new CoTask1{};
   pCoTask2 = new CoTask2{};
-  pCoTask1->resumeAsMain();             
+  pCoTask1->start();             
   delete pCoTask1;
   delete pCoTask2;
   cout << "\nPress ENTER for program termination" << endl;
   cin.get();
-  finalizeComtay();           // End using the COMTAY.
   return 0;
 }
 
