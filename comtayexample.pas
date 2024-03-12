@@ -56,12 +56,10 @@ begin
   Cotask1 := TCotask1.Create;  
   Cotask2 := TCotask2.Create;  
 
-  Cotask1.ResumeAsMain;
+  Cotask1.Start;
 
   Cotask1.Free;
   Cotask2.Free;
-
-  FinalizeComtay;               // End using the COMTAY.
 
   Write(EOL,'Press ENTER for program termination');
   ReadLn;
