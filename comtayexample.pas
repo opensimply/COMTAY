@@ -11,7 +11,7 @@ program COMTAYexample;
 {$S-} 
 
 uses
-  Comtay;  // That's all you need to start using the COMTAY features.
+  Comtay;  
 
 type
 
@@ -25,7 +25,7 @@ type
     procedure Body; override;
   end;
 
-procedure TCotask1.Body;  // Description of Task #1.
+procedure TCotask1.Body;         // Description of Task #1.
 var
   i: Integer;
 begin
@@ -36,7 +36,7 @@ begin
   end;
 end;
 
-procedure TCotask2.Body;  // Description of Task #2.
+procedure TCotask2.Body;         // Description of Task #2.
 begin
   repeat
     WriteLn('World!');
@@ -49,7 +49,7 @@ var
   Cotask2: TCotask2;
 
 begin
-  InitializeComtay;  // Start using the COMTAY.
+  InitializeComtay;              // Start using the COMTAY.
 
   Cotask1 := TCotask1.Create;  
   Cotask2 := TCotask2.Create;  
