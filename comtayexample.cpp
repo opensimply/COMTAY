@@ -27,27 +27,29 @@ CoTask1* pCoTask1 = nullptr;
 CoTask2* pCoTask2 = nullptr;
 
 int main() {
-  initializeComtay();         // Start using the COMTAY.
+  initializeComtay();                  
+  
   pCoTask1 = new CoTask1{};
   pCoTask2 = new CoTask2{};
+  
   pCoTask1->start();             
+  
   delete pCoTask1;
   delete pCoTask2;
+  
   cout << "\nPress ENTER for program termination" << endl;
   cin.get();
   return 0;
 }
 
-// Description of Task #1
-void CoTask1::body() {
+void CoTask1::body() {                  // Description of Task #1
   for (int i = 0; i < 3; i++) {
     cout << "Hello, ";
     resume(pCoTask2);
   }
 };
 
-// Description of Task #2
-void CoTask2::body() {
+void CoTask2::body() {                  // Description of Task #2
   for (;;) {
     cout << "World!" << endl;
     suspend();         
