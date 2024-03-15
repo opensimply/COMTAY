@@ -11,7 +11,7 @@ program COMTAYexample;
 {$S-} 
 
 uses
-  Comtay;  
+  Comtay;                             // The Comtay unit contains coroutine functions.  
 
 type
 
