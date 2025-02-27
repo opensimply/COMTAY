@@ -2,7 +2,9 @@
 COMTAY coroutine manager is free software to implement coroutines for Delphi, Free Pascal and C++. 
 It is applicable to both procedural and class-based programming. Exceptions and Co. work as well.
 ***
-**COMTAY 5.0.2 has been released.**
+**COMTAY 5.0.3 has been released.**
+****
+It contains fixes to prevent Delphi 12 compiler errors.             
 ***
 **Download COMTAY at [opensimply.org/comtay](https://opensimply.org/comtay/)**
 ***
